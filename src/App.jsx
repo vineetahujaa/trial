@@ -27,13 +27,11 @@ export default function App() {
     setCurrentRoute(route);
   };
 
-  const isDarkMode = ['login', 'signup'].includes(currentRoute);
+  const isDarkMode =false;
 
   return (
     <div className={`min-h-screen font-sans selection:bg-emerald-500/30 transition-colors duration-500 ${isDarkMode ? 'bg-black text-white' : 'bg-slate-50 text-gray-900'}`}>
       {currentRoute === 'landing' && <LandingPage navigate={navigate} />}
-      {currentRoute === 'login' && <AuthSimulator navigate={navigate} type="login" />}
-      {currentRoute === 'signup' && <AuthSimulator navigate={navigate} type="signup" />}
       {currentRoute === 'upload' && <UploadPage navigate={navigate} />}
       {currentRoute === 'dashboard' && (
   <SignedIn>
