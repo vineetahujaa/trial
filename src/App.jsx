@@ -251,7 +251,7 @@ function LandingPage({ navigate }) {
 
   return (
     <div className="min-h-screen bg-slate-50 text-gray-900 flex flex-col font-sans overflow-x-hidden">
-      <div className="relative w-full h-[95vh] flex flex-col justify-center items-center overflow-hidden">
+      <div className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden pt-28 md:pt-32 lg:pt-36 pb-20">
         <div className="absolute inset-0 z-0">
           <video
   autoPlay
@@ -309,7 +309,7 @@ function LandingPage({ navigate }) {
 </div>
         </nav>
 
-        <div className="relative z-10 text-center max-w-6xl px-6">
+        <div className="relative z-10 text-center max-w-6xl px-6 pt-20 md:pt-24 lg:pt-28">
           <FadeIn delay={100} direction="scale">
             <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-emerald-200 bg-emerald-500/10 mb-10 backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
