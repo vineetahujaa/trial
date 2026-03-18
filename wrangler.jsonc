@@ -4,14 +4,16 @@
   "pages_build_output_dir": "./dist",
   "compatibility_date": "2026-03-19",
   "compatibility_flags": ["nodejs_compat"],
+
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "yieldpe_db",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
-      "preview_database_id": "REPLACE_WITH_D1_PREVIEW_DATABASE_ID"
+      "database_id": "5277a208-1039-4b74-bdd8-da90b167724c",
+      "preview_database_id": "48f471fd-0893-4440-a667-9559bfc980ce"
     }
   ],
+
   "r2_buckets": [
     {
       "binding": "BUCKET",
