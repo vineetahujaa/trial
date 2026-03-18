@@ -35,7 +35,26 @@ export default function App() {
       {currentRoute === 'login' && <AuthSimulator navigate={navigate} type="login" />}
       {currentRoute === 'signup' && <AuthSimulator navigate={navigate} type="signup" />}
       {currentRoute === 'upload' && <UploadPage navigate={navigate} />}
-      {currentRoute === 'dashboard' && <DashboardPage navigate={navigate} />}
+      {currentRoute === 'dashboard' && (
+  <SignedIn>
+    <DashboardPage navigate={navigate} />
+  </SignedIn>
+)}
+{currentRoute === 'dashboard' && (
+  <SignedOut>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
+      <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm text-center max-w-md">
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Authentication Required</h2>
+        <p className="text-gray-500 mb-6">Please sign in to access the dashboard.</p>
+        <SignInButton mode="modal">
+          <button className="bg-gray-900 hover:bg-black text-white font-bold px-6 py-3 rounded-xl">
+            Sign In
+          </button>
+        </SignInButton>
+      </div>
+    </div>
+  </SignedOut>
+)}
     </div>
   );
 }
