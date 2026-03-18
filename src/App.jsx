@@ -266,8 +266,8 @@ function LandingPage({ navigate }) {
           <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-slate-50"></div>
         </div>
 
-        <nav className="absolute top-0 left-0 w-full px-6 lg:px-12 py-10 flex justify-between items-center z-50">
-          <div onClick={() => navigate('landing')} className="shrink-0">
+<nav className="absolute top-0 left-0 w-full px-6 lg:px-12 py-10 flex justify-between items-center z-[100]">
+  <div onClick={() => navigate('landing')} className="shrink-0">
             <BrandLogo className="text-2xl" theme="light" />
           </div>
 
