@@ -296,7 +296,7 @@ function LandingPage({ navigate }) {
         </div>
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full mt-12 md:-mt-16 lg:-mt-24 mb-24 md:mb-32 lg:mb-40">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full mt-12 md:mt-16 lg:mt-20 mb-24 md:mb-32">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard delay={200} icon={<ShieldCheck />} title="Compliance Ready" desc="Automated EOM audit reporting and EU Digital Battery Passport generation." color="emerald" />
           <FeatureCard delay={300} icon={<Clock />} title="Live Tracking" desc="Real-time 24/7 barcode tracking of batch locations and processing stages." color="cyan" />
