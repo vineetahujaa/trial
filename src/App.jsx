@@ -257,14 +257,35 @@ function LandingPage({ navigate }) {
             <span onClick={() => scrollToId('contact')} className="cursor-pointer hover:text-emerald-600 transition-colors">Contact</span>
           </div>
 
-          <div className="flex items-center gap-4 shrink-0">
-            <button 
-              onClick={() => navigate('login')} 
-              className="bg-gray-900 hover:bg-black text-white font-black px-10 py-3.5 rounded-full transition-all shadow-xl text-xs uppercase tracking-widest"
-            >
-              Access Platform
-            </button>
-          </div>
+          <div className="flex items-center gap-3 shrink-0">
+  <SignedOut>
+    <SignInButton mode="modal">
+      <button className="bg-gray-900 hover:bg-black text-white font-black px-8 py-3.5 rounded-full transition-all shadow-xl text-xs uppercase tracking-widest">
+        Sign In
+      </button>
+    </SignInButton>
+
+    <SignUpButton mode="modal">
+      <button className="bg-white/70 hover:bg-white text-gray-900 font-black px-8 py-3.5 rounded-full transition-all shadow-xl text-xs uppercase tracking-widest border border-white/70">
+        Sign Up
+      </button>
+    </SignUpButton>
+  </SignedOut>
+
+  <SignedIn>
+    <div className="flex items-center gap-3">
+      <button
+        onClick={() => navigate('dashboard')}
+        className="bg-gray-900 hover:bg-black text-white font-black px-8 py-3.5 rounded-full transition-all shadow-xl text-xs uppercase tracking-widest"
+      >
+        Dashboard
+      </button>
+      <div className="bg-white/70 backdrop-blur-xl rounded-full p-1 border border-white/70">
+        <UserButton afterSignOutUrl="/" />
+      </div>
+    </div>
+  </SignedIn>
+</div>
         </nav>
 
         <div className="relative z-10 text-center max-w-6xl px-6">
@@ -289,12 +310,22 @@ function LandingPage({ navigate }) {
           </FadeIn>
 
           <FadeIn delay={600} direction="up" className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-8">
-            <button 
-              onClick={() => navigate('login')} 
-              className="group w-full max-w-[360px] lg:max-w-none lg:w-auto bg-gray-900 text-white font-black text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-14 py-5 lg:py-6 rounded-full transition-all hover:bg-black hover:scale-105 flex items-center justify-center gap-4 shadow-2xl uppercase tracking-widest"
-            >
-              Enter Platform <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform"/>
-            </button>
+            <SignedOut>
+  <SignInButton mode="modal">
+    <button className="group w-full sm:w-auto bg-gray-900 text-white font-black text-xl px-14 py-6 rounded-full transition-all hover:bg-black hover:scale-105 flex items-center justify-center gap-4 shadow-2xl uppercase tracking-widest">
+      Enter Platform <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform"/>
+    </button>
+  </SignInButton>
+</SignedOut>
+
+<SignedIn>
+  <button
+    onClick={() => navigate('dashboard')}
+    className="group w-full sm:w-auto bg-gray-900 text-white font-black text-xl px-14 py-6 rounded-full transition-all hover:bg-black hover:scale-105 flex items-center justify-center gap-4 shadow-2xl uppercase tracking-widest"
+  >
+    Go to Dashboard <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform"/>
+  </button>
+</SignedIn>
             <button onClick={() => scrollToId('platform')} className="w-full max-w-[360px] lg:max-w-none lg:w-auto bg-white/60 hover:bg-white/80 backdrop-blur-xl border border-white/80 text-gray-900 font-bold text-base sm:text-lg px-8 sm:px-12 lg:px-14 py-5 lg:py-6 rounded-full transition-all uppercase tracking-widest shadow-sm">
               Watch Demo
             </button>
