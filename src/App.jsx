@@ -309,13 +309,8 @@ function LandingPage({ navigate }) {
 </div>
         </nav>
 
-        <div className="relative z-10 text-center max-w-6xl px-6 pt-20 md:pt-24 lg:pt-28">
-          <FadeIn delay={100} direction="scale">
-            <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-emerald-200 bg-emerald-500/10 mb-10 backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-[10px] uppercase tracking-[0.4em] text-emerald-800 font-black">Next-Gen Operational OS</span>
-            </div>
-          </FadeIn>
+        <div className="relative z-10 text-center max-w-6xl px-6">
+          
 
           <FadeIn delay={200} direction="up">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-black text-gray-900 leading-[0.95] lg:leading-[0.9] tracking-tighter mb-8 md:mb-10 uppercase break-words">
