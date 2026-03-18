@@ -260,7 +260,7 @@ function LandingPage({ navigate }) {
   playsInline
   className="w-full h-full object-cover"
 >
-  <source src="/hero-video.mp4" type="video/mp4" />
+  <source src="/Recycling_Plant_Video_Generation.mp4" type="video/mp4" />
 </video>
           <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-slate-50"></div>
