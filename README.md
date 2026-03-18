@@ -1,12 +1,16 @@
-# YieldPe Merged App
+# YieldPe Full Final
 
-This zip contains a ready-to-upload Vite + React project.
+Full merged React + Vite project.
 
-## Run locally
-1. npm install
-2. npm run dev
+Included:
+- Code 1 landing page
+- Code 2 login/signup flow
+- Code 2 data ingest page
+- Code 2 full dashboard with modules
 
-## Included
-- Landing page based on code 1
-- Login -> data ingest -> dashboard flow from code 2
-- GitHub-ready project structure
+## Run
+npm install
+npm run dev
+
+## Build
+npm run build
