@@ -270,7 +270,7 @@ function LandingPage({ navigate }) {
           </FadeIn>
 
           <FadeIn delay={200} direction="up">
-            <h1 className="text-5xl md:text-[7rem] font-black text-gray-900 leading-[0.9] tracking-tighter mb-10 uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-black text-gray-900 leading-[0.95] lg:leading-[0.9] tracking-tighter mb-8 md:mb-10 uppercase break-words">
               RECYCLE & YIELD <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-cyan-600">INTELLIGENTLY.</span>
             </h1>
@@ -282,21 +282,21 @@ function LandingPage({ navigate }) {
             </p>
           </FadeIn>
 
-          <FadeIn delay={600} direction="up" className="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <FadeIn delay={600} direction="up" className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-8">
             <button 
               onClick={() => navigate('login')} 
-              className="group w-full sm:w-auto bg-gray-900 text-white font-black text-xl px-14 py-6 rounded-full transition-all hover:bg-black hover:scale-105 flex items-center justify-center gap-4 shadow-2xl uppercase tracking-widest"
+              className="group w-full max-w-[360px] lg:max-w-none lg:w-auto bg-gray-900 text-white font-black text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-14 py-5 lg:py-6 rounded-full transition-all hover:bg-black hover:scale-105 flex items-center justify-center gap-4 shadow-2xl uppercase tracking-widest"
             >
               Enter Platform <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform"/>
             </button>
-            <button onClick={() => scrollToId('platform')} className="w-full sm:w-auto bg-white/60 hover:bg-white/80 backdrop-blur-xl border border-white/80 text-gray-900 font-bold text-lg px-14 py-6 rounded-full transition-all uppercase tracking-widest shadow-sm">
+            <button onClick={() => scrollToId('platform')} className="w-full max-w-[360px] lg:max-w-none lg:w-auto bg-white/60 hover:bg-white/80 backdrop-blur-xl border border-white/80 text-gray-900 font-bold text-base sm:text-lg px-8 sm:px-12 lg:px-14 py-5 lg:py-6 rounded-full transition-all uppercase tracking-widest shadow-sm">
               Watch Demo
             </button>
           </FadeIn>
         </div>
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full -mt-24 mb-40">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full mt-12 md:-mt-16 lg:-mt-24 mb-24 md:mb-32 lg:mb-40">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard delay={200} icon={<ShieldCheck />} title="Compliance Ready" desc="Automated EOM audit reporting and EU Digital Battery Passport generation." color="emerald" />
           <FeatureCard delay={300} icon={<Clock />} title="Live Tracking" desc="Real-time 24/7 barcode tracking of batch locations and processing stages." color="cyan" />
