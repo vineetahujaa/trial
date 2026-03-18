@@ -253,11 +253,15 @@ function LandingPage({ navigate }) {
     <div className="min-h-screen bg-slate-50 text-gray-900 flex flex-col font-sans overflow-x-hidden">
       <div className="relative w-full h-[95vh] flex flex-col justify-center items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=80" 
-            alt="Clean Industrial Background" 
-            className="w-full h-full object-cover"
-          />
+          <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full h-full object-cover"
+>
+  <source src="/hero-video.mp4" type="video/mp4" />
+</video>
           <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-slate-50"></div>
         </div>
