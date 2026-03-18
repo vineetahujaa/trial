@@ -9,7 +9,13 @@ import {
   Plus, Zap, FileSpreadsheet, ShieldCheck, Phone, Globe, Mail, MapPin,
   ChevronRight, Sparkles, LayoutDashboard
 } from 'lucide-react';
-
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/clerk-react';
 // ==========================================
 // MAIN APP COMPONENT
 // ==========================================
