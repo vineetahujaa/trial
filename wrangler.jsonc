@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "yieldpe-full-final",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-03-19",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yieldpe_db",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "preview_database_id": "REPLACE_WITH_D1_PREVIEW_DATABASE_ID"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "yieldpe-r2-prod",
+      "preview_bucket_name": "yieldpe-r2-dev"
+    }
+  ]
+}
